@@ -5,11 +5,17 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import CouncilDashboard from '@/components/CouncilDashboard';
 import ProposalForm from '@/components/ProposalForm';
 import VotingInterface from '@/components/VotingInterface';
+import Logo from '@/components/Logo';
+import AuthDialog from '@/components/AuthDialog';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       <header className="mb-8">
+        <div className="flex justify-between items-center mb-4">
+          <Logo />
+          <AuthDialog />
+        </div>
         <h1 className="text-4xl font-bold text-gray-900">AI-PGF Multi-Agent Council</h1>
         <p className="text-xl text-gray-600 mt-2">Decentralized decision-making for AI governance</p>
       </header>
